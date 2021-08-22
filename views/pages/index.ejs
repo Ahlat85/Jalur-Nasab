@@ -1,0 +1,33 @@
+<%- include("../components/body"); %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+       <div class="pagination">
+       <% if (pagination != undefined) { %>
+         <% for (let i = 1; i <= pagination; i++) { %>
+             <a class="btn btn-primary" href="/<%- i -%>">
+                       <%- String(i).toIndiaDigits() -%></a>
+               <% } %>
+             <% } %>
+          </div>
+      </div>
+    </div>
+  <button class="btn btn-warning" id="btn-cetak">Cetak</button>
+</div>
+
+<div id="slide">
+  <ol start="<%= start %>">
+    <% nasab.forEach(function(e) { %>
+      <li class="nasab bg-<%= e[3] %>">
+        <span><%= e[0] %></span>
+        <p>
+          <span><%= e[1] %></span>
+          <br>
+          <span class="text-muted"><%= e[2] %></span>
+        </p>
+      </li>
+    <% }); %>
+  </ol>
+  <p class="page"><%= page %></p>
+</div>

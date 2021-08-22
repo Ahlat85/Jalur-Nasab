@@ -1,0 +1,6 @@
+{
+  "app": {
+    "port": 8512,
+    "file": "./data/nasab.json"
+  }
+}

@@ -1,0 +1,47 @@
+body {
+  padding: 2cm;
+}
+
+#slide span {
+  font-size: .29cm;
+}
+
+.btn {
+  margin: 3px;
+}
+
+#slide {
+	width: 21cm;
+	height: 29.7cm;
+	padding: .3cm;
+	border: 1px solid black;
+	overflow: hidden;
+	position: relative;
+}
+
+ol {
+  display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	list-style: arabic-indic;
+}
+
+li {
+  direction: rtl;
+  overflow-wrap: break-word;
+  
+}
+
+.nasab {
+  text-align: center;
+  width: 1.7cm;
+  height: 1.5cm;
+  margin: .3cm;
+  border: 1px solid black;
+}
+
+
+.page {
+  position: absolute;
+  bottom: 0;
+}
